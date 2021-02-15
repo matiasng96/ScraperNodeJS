@@ -1,0 +1,34 @@
+<div id="anual">
+  <h1>Tabla de Posiciones Campeonato Uruguayo</h1>
+
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>POS</th>
+          <th>CLUB</th>
+          <th>J</th>
+          <th>G</th>
+          <th>E</th>
+          <th>P</th>
+          <th>DG</th>
+          <th>PUNTOS</th>
+        </tr>
+      </thead>
+
+      {{#each stats}}
+      <tr id={{colorXpos this.pos}}>
+        <td>{{this.pos}}</td>
+        <td><img src={{this.escudo}} alt={{this.abr}}>
+          <p>{{this.nombreClub}}</p>
+        </td>
+        <td>{{this.j}}</td>
+        <td>{{this.g}}</td>
+        <td>{{this.e}}</td>
+        <td>{{this.p}}</td>
+        <td>{{this.dg}}</td>
+        <td>{{this.pts}}</td>
+      </tr>
+      {{/each}}
+    </table>
+
+  </div>
