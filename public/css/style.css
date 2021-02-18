@@ -1,146 +1,148 @@
-
-body{
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  color: aliceblue;
-  
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	color: aliceblue;
 }
 
-#home{
-  background-image: url('../img/6b3eb40f-pelota-amistosos.jpg');
-  background-size:cover;
-  background-position:center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-  line-height: 1.6;
+#home {
+	background-image: url('../img/6b3eb40f-pelota-amistosos.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	line-height: 1.6;
 }
 
 .boxBackground {
-  background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 50%;
 }
 
 #home h1 {
-  font-size: 40px;
-  line-height: 1.2;
-  text-shadow: 2px 2px 2px black;
-  
- 
+	font-size: 35px;
+	line-height: 1.2;
+	text-shadow: 2px 2px 2px black;
 }
 
 #home p {
-  font-size: 20px;
+	padding: 0px 6px 0px 6px;
 }
 
 #home .button {
-  font-size: 18px;
-  text-decoration: none;
-  color: aliceblue;
-  border: aliceblue 1px solid;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-
+	font-size: 18px;
+	text-decoration: none;
+	color: aliceblue;
+	border: aliceblue 1px solid;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 20px;
 }
 
 #home .button:hover {
-  background-color: #03d3fc;
-  transition: background-color .5s;
+	background-color: #03d3fc;
+	transition: background-color .5s;
 }
 
 #anual {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../img/backgroundAnual.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height:100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: url('../img/backgroundAnual.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
 
 #anual h1 {
-  text-align: center;
-  text-shadow: 1px 1px 2px black;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
 }
 
-
 .table-content {
-  color: #293241;
-  font-weight: bold;
-  background-color: #FFFF ;
-  text-align: center;
-  width: fit-content;
-  height: 450px;
-  margin: 0 auto;
-  padding: 0 auto;
-  border-left: 3.5px solid #023047;
-  border-right: 3.5px solid #023047;
-  border-collapse: collapse;
+	color: #293241;
+	font-weight: bold;
+	background-color: #FFFF;
+	text-align: center;
+	width: fit-content;
+	height: 450px;
+	margin: 0 auto;
+	padding: 0 auto;
+	border-left: 3.5px solid #023047;
+	border-right: 3.5px solid #023047;
+	border-collapse: collapse;
 }
 
 .table-content thead th {
-  color: #FFFF;
-  text-shadow: 1px 1px 2px black;
-  background-color: #293241;
-  padding-left: 10px;
-  padding-right: 10px;
+	color: #FFFF;
+	text-shadow: 1px 1px 2px black;
+	background-color: #293241;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.table-content td { 
-  padding: 3px 6px 3px 4px
-  
+.table-content td {
+	padding: 3px 6px 3px 4px;
 }
-
 
 .table-content td img {
-  padding-right: 3px;
+	padding-right: 3px;
 }
 
-
-
 #top4 {
-    border: 2.5px solid #13bf19;
-    
-    
-  }
+	border: 2.5px solid #13bf19;
+}
 
 #halftable {
-    border: 2px solid #579eeb;
-    
-    
-  }
+	border: 2px solid #579eeb;
+}
 
 #last4 {
-    border: 2.5px solid #f21f13;
-    
-    
-  }
+	border: 2.5px solid #f21f13;
+}
 
+@media (max-width: 520px) {
+	.boxBackground {
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+	}
 
-  @media (max-width: 400px)  {
-    
-    h1{
-      font-size: 14px;
-    }
+	#home h1 {
+		font-size: 25px;
+	}
 
-    .table-content{
-      font-size: 0.8em;
-    }
+	#home p {
+		font-size: 15px;
+	}
 
-    .table-content thead th {
-     
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-    
-    .table-content td { 
-      padding: 1px 3px 2px 2px
-    }
+	#home .button {
+		font-size: 16px;
+		padding: 8px 15px;
+	}
+}
+
+@media (max-width: 400px) {
+	#anual h1 {
+		font-size: 14px;
+	}
+
+	.table-content {
+		font-size: 0.8em;
+	}
+
+	.table-content thead th {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.table-content td {
+		padding: 1px 3px 2px 2px;
+	}
 }
