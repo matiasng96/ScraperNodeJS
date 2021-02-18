@@ -9,6 +9,7 @@ const cheerio = require('cheerio');
 const mongoose = require('mongoose');
 const model = require('./models/teamStats');
 const db = process.env.MONGODB_URI;
+const helpers = require('./helpers/helpers');
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 
