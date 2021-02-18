@@ -8,7 +8,6 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const mongoose = require('mongoose');
 const model = require('./models/teamStats');
-const db = 'mongodb+srv://matiasng:GnXBcKvAIobg2Zv9@cluster0.4i9ha.mongodb.net/test?retryWrites=true&w=majority';
 const db = process.env.MONGODB_URI;
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
